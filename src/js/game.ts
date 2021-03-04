@@ -12,7 +12,7 @@ interface GameInterface {
   size: { r: number, c: number },
   fillDensity: number,
   lifeSpan: number,
-  priseProbability: number,
+  scoreProbability: number,
   winPos: { r: number, c: number },
   onChange: () => void,
   fps?: number
