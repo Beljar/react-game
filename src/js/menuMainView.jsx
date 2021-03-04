@@ -14,14 +14,14 @@ class MenuMainView extends Component {
   newGameAutoPlay() {
     this.props.config.autoplay = 1;
     this.props.game.newGame();
-    this.props.game.autoPlayStart();    
+    this.props.game.autoPlayStart();
     this.props.close();
   }
   render() {
     return <Fragment>
-      <div className = 'menu__btn' onClick = {this.newGame}>New game</div>
-      <div className = 'menu__btn' onClick = {this.newGameAutoPlay}>Autoplay</div>
-      <div className = 'menu__btn' onClick = {() => {this.props.route('settings')}}>Settings</div>      
+      <div className='menu__btn' onClick={this.newGame}>New game</div>
+      <div className='menu__btn' onClick={this.newGameAutoPlay}>Autoplay</div>
+      <div className='menu__btn' onClick={() => { this.props.route('settings') }}>Settings</div>
     </Fragment>
   }
 }

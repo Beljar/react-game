@@ -12,6 +12,7 @@ interface GameInterface {
   size: { r: number, c: number },
   fillDensity: number,
   lifeSpan: number,
+  priseProbability: number,
   winPos: { r: number, c: number },
   onChange: () => void,
   fps?: number
@@ -68,6 +69,7 @@ class Game {
     size,
     fillDensity,
     lifeSpan,
+    scoreProbability,
     winPos,
     onChange,
     fps = 24
@@ -84,7 +86,7 @@ class Game {
     this.lifeSpan = lifeSpan;
     this.fillDensity = fillDensity;
     this.winPos = winPos;
-    this.scoreProbability = 0.1;
+    this.scoreProbability = scoreProbability;
     this.onChange = onChange;
   }
 

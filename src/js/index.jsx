@@ -25,6 +25,7 @@ class GameComponent extends Component {
         size: { r: 8, c: 12 },
         fillDensity: 0.75,
         lifeSpan: 15,
+        scoreProbability: 0.1,
         winPos: { r: null, c: null },
         onChange: this.reset.bind(this)
       }
