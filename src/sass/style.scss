@@ -2,6 +2,7 @@
 @use './modules/menu';
 @use './modules/header';
 @use './modules/fonts';
+@use './modules/scrollbar';
 
 body {
   overflow: hidden;

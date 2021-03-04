@@ -19,9 +19,12 @@ class MenuMainView extends Component {
   }
   render() {
     return <Fragment>
-      <div className='menu__btn' onClick={this.newGame}>New game</div>
-      <div className='menu__btn' onClick={this.newGameAutoPlay}>Autoplay</div>
-      <div className='menu__btn' onClick={() => { this.props.route('settings') }}>Settings</div>
+      <div className='h1'>Your Life <br></br> Simulator</div>
+      <div className='block'>
+        <div className='menu__btn' onClick={this.newGame}>New game</div>
+        <div className='menu__btn' onClick={this.newGameAutoPlay}>Autoplay</div>
+        <div className='menu__btn' onClick={() => { this.props.route('settings') }}>Settings</div>
+      </div>
     </Fragment>
   }
 }

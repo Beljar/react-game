@@ -50,6 +50,7 @@ class Menu extends Component {
       <div className='menu'>
         <this.state.component game={this.props.game} route={this.route} config={this.props.config} setConfig={this.props.setConfig} close={this.close} />
         <div className='menu__toggle' onClick={this.toggle}>{(this.state.opened) ? 'close' : 'menu'}</div>
+        
       </div>
     </div>
   }
